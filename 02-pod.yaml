@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: nginx
-  namepace: roboshop
+  namespace: roboshop
 spec:
   containers:
     - name: nginx
