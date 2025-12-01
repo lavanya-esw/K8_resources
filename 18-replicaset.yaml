@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: nginx
+  lables:
+    purpose: replicaset-demo
+    project: rorboshop
+spec:
+  selector:
+    matchLabels:
+      purpose: replicaset-demo
+      project: rorboshop
+  template:
+    metadata:
+      labels:
+        purpose: replicaset-demo
+        project: rorboshop
+    spec:
+      containers:
+        - name: nginx
+          image: nginx
