@@ -1,7 +1,7 @@
 apiVersion: apps/v1
-kind: Deploymrnt
+kind: Deployment
 metadata:
-  name: nginx
+  name: deployment-demo
   labels:
     purpose: replicaset-demo
     project: rorboshop
