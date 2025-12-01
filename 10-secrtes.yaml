@@ -4,5 +4,5 @@ metadata:
   name: pod-Secret
 type: Opaque
 data: 
-  username: YWRtaW4K
-  password: YWRtaW4xMjMK
+  username: "YWRtaW4K"
+  password: "YWRtaW4xMjMK"
