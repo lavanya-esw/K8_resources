@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Pod
 metadata: 
-  name: nodeport-demo\
+  name: nodeport-demo
   labels:
     project: roboshop
     component: frontend
