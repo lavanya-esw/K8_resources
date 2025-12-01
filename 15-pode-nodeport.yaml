@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata: 
+  name: nodeport-demo\
+  labels:
+    project: roboshop
+    component: frontend
+    environment: dev
+    cloud: AWS
+spec:
+  containers:
+    - name: nginx
+      image : nginx
+
