@@ -20,7 +20,7 @@ kind: PersistentVolumeClaim
 metadata:
   name: ebs-static
 spec:
-  storageClass: ""
+  storageClassName: ""
   volumeName: ebs-static
   accessModes:
     - ReadWriteOnce
