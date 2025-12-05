@@ -9,7 +9,7 @@ spec:
       image: nginx
       volumeMounts:
         - name: nginx-logs
-          mounthPath: /var/log/nginx
+          mountPath: /var/log/nginx
     - name: almalinux
       image: almalinux:9
       volumeMounts:
