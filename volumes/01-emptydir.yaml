@@ -14,7 +14,7 @@ spec:
       image: almalinux:9
       volumeMounts:
         - name: nginx-logs
-          mounthPath: /mnt/nginx-logs
+          mountPath: /mnt/nginx-logs
           readonly: true
 
   volumes:
