@@ -16,7 +16,7 @@ spec:
 
 ---
 apiVersion: v1
-kind: PersistenceVolumeClaim
+kind: PersistentVolumeClaim
 metadata:
   name: ebs-static
 spec:
@@ -40,7 +40,7 @@ spec:
       image: nginx
       volumeMounts:
         - name: nginx-html
-          mounthPath: /usr/share/nginx/html
+          mountPath: /usr/share/nginx/html
       nodeSelector:
         topology.kubernetes.io/zone: us-east-1a
 
