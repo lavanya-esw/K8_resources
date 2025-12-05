@@ -12,7 +12,7 @@ spec:
   persistentVolumeReclaimPolicy: Retain
   csi:
     driver: efs.csi.aws.com
-    volumeHandle: 
+    volumeHandle: fs-01b09a58c5725cc10
 ---
 apiVersion: v1
 kind: PersistentVolumeClaim
@@ -41,7 +41,7 @@ spec:
     - name: nginx-html
       mountPath: /usr/share/nginx/html
   nodeSelector:
-    topology.kubernetes.io/zone: us-east-1b
+    topology.kubernetes.io/zone: us-east-1d
   volumes:
   - name: nginx-html
     persistentVolumeClaim:
