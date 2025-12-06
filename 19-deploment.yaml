@@ -19,4 +19,17 @@ spec:
     spec:
       containers:
         - name: nginx
-          image: nginx:trixie
+          image: nginx
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: deployment-demo
+spec:
+  selector:
+    purpose: replicaset-demo
+    project: rorboshop
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
