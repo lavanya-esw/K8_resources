@@ -31,20 +31,20 @@ spec:
   selector:   
     matchLabels:
       purpose: statefulset-demo
-    template:
-      metadata:
-        labels:
-          purpose: statefulset-demo
-          spec:
-      containers:
-      - name: nginx
-        image: nginx
-        ports:
-        - containerPort: 80
-          name: web
-        volumeMounts:
-        - name: statefulset-volume
-          mountPath: /usr/share/nginx/html
+  template:
+    metadata:
+      labels:
+        purpose: statefulset-demo
+        spec:
+    containers:
+    - name: nginx
+      image: nginx
+      ports:
+      - containerPort: 80
+        name: web
+      volumeMounts:
+      - name: statefulset-volume
+        mountPath: /usr/share/nginx/html
       # This is PVC
   volumeClaimTemplates:
   - metadata:
