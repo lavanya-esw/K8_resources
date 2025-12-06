@@ -3,6 +3,7 @@ kind: Service
 metadata:
   name: headless-service
 spec:
+  clusterIp: None
   selector: 
     purpose: headlessservice-demo
   ports:
