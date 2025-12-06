@@ -22,7 +22,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: headless-service
+  name: nginx-headless
 spec:
   clusterIP: None
   selector: 
@@ -34,7 +34,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: headless-service
+  name: nginx
 spec:
   selector: 
     purpose: headlessservice-demo
