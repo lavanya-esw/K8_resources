@@ -27,10 +27,10 @@ metadata:
   name: nginx
 spec:
   replicas: 4
+  serviceName: "nginx-headless"
   selector:   
     matchLabels:
       purpose: statefulset-demo
-    serviceName: "nginx-headless"
     template:
       metadata:
         labels:
