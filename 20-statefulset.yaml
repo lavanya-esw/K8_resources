@@ -26,11 +26,11 @@ kind: StatefulSet
 metadata:   
   name: nginx
 spec:
+  replicas: 4
   selector:   
     matchLabels:
       purpose: statefulset-demo
     serviceName: "nginx-headless"
-    replicas: 4
     template:
       metadata:
         labels:
