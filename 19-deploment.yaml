@@ -26,6 +26,7 @@ kind: Service
 metadata:
   name: deployment-demo
 spec:
+  type : LoadBalancer
   selector:
     purpose: replicaset-demo
     project: rorboshop
